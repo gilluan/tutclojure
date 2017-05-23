@@ -17,7 +17,7 @@ As ideias do Lisp (incluindo Racket, Scheme, Clojure etc.)
 
 ## 1) A sintaxe é muito simples.
 
-As programas são feito de listas.
+As programas são feito com listas.
 
 <pre><code>
     (1 2 3) 
@@ -29,7 +29,7 @@ E listas dentro as listas
     (1 2 (3 4))
 </code></pre>
 
-Expressões também são listas. Sempre o nome do operador ou função como o primeiro elemento do lista e as operandos / argumentos depois.
+Expressões também são listas. Sempre o nome do operador ou função como o primeiro elemento da lista e as operandos / argumentos depois.
 
 <pre><code class="language-klipse">(+ 2 2)</code></pre>
 
@@ -39,30 +39,30 @@ Expressões também são listas. Sempre o nome do operador ou função como o pr
     
 #### Exerciso 1.
 
-Traduze esta expressão em Lisp e avalia no seu computador
+Traduza esta expressão em Lisp e avalie no seu computador
 
 <pre><code>   
     3 * (5 + 9)
 </code></pre>
    
 <pre><code class="language-klipse">
-; Escreve aqui
+; Escreva aqui
 </code></pre>
 
-E isso?
+É isso?
 
 <pre><code>
     4 * (1 + 2 + 3 + 4 + 5 + 6) * 5 / 10
 </code></pre>
 
 <pre><code class="language-klipse">
-; Escreve aqui
+; Escreva aqui
 </code></pre>
 
 
-Sua programa em Lisp e nada mais do que um series destas expressões. 
+Seu programa em Lisp é nada mais do que um séries de expressões. 
 
-Por exemplo, o expressão condicional utilizando "if"  :
+Por exemplo, a expressão condicional utilizando "if":
 
 <pre><code class="language-klipse">
     (if (= 0 1) "sim" "nao")
@@ -103,22 +103,22 @@ Substring :
 
 ### Exerciso 2.
 
-Escreve um teste se a primeiro n caracteres de uma string saos iguais.
+Escreva um teste se o primeiro n caracteres de uma string são iguais.
 
 <pre><code class="language-klipse">
-; Escreve aqui
+; Escreva aqui
 </code></pre>
 
 ## Expressoes e Funcoes
 
-Criando um nome, e vinculando um valor com o nome utilizar o "let"
+Criando um nome, e vinculando um valor com o nome utilize o "let"
 
 <pre><code class="language-klipse">
     (let [x 15] 
 	    (if (< 10 x) "sim" "nao") )
 </code></pre>
 
-Obs. : o "let" cria um "escopo" dentro sue expressao. O nome `x` 'e so definido dentr deste escopo. Como sempre em Lisp, o tamanho do expressao "let" 'e definido pela as parenteses.
+Obs. : o "let" cria um "escopo" dentro de sua expressao. O nome `x` só é definido dentro deste escopo. Como sempre em Lisp, o tamanho da expressao "let" é definido pelos parenteses.
 
 
 Criando uma função também com estrutura de lista ... utilizando o função "defn"
@@ -130,7 +130,7 @@ Criando uma função também com estrutura de lista ... utilizando o função "d
 
 ### Exerciso 3.
 
-Criar um função que receber dois argumentos strings e responde se eles tem as primeiros 4 caracteres iguais.
+Criar um função que recebe dois argumentos strings e responde se eles tem os primeiros 4 caracteres iguais.
 
 Eg. 
 
@@ -140,20 +140,20 @@ Eg.
 </code></pre>
 
 <pre><code class="language-klipse">
-; Escreve aqui
+; Escreva aqui
 </code></pre>
 
 
 Adaptar sua função pra receber as dois argumentos e um numero n e teste as primeiros n caracteres.
 
 <pre><code class="language-klipse">
-; Escreve aqui
+; Escreva aqui
 </code></pre>
 
 
 ----
 
-Vai ao <a href="page2.html">Pagina 2</a>
+Vai ao <a href="page2.html">Página 2</a>
 
 .] .] .]
 
@@ -182,14 +182,14 @@ Nao podemos escrever um lista assim :
 </code></pre>
 
     
-Pq? A Lisp sempre trata o primeiro item na lista como um funcao. Pra falar sobre um lista sem tentar avaliar, precisamos o "quote".
+Pq? O Lisp sempre trata o primeiro item na lista como um função. Pra falar sobre um lista sem tentar avaliar, precisamos o ("quote"|"aspas simples").
 
 <pre><code class="language-klipse">
     '(1 2 3 4)
 </code></pre>
     
 
-Funções que produzam listas.
+Funções que produzem listas.
 
 <pre><code class="language-klipse">
     (list 1 2 3 4)
